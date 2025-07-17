@@ -1,0 +1,60 @@
+/* Umum: semua kartu */
+.card {
+  position: relative;
+  border-width: 2px;
+  border-color: #343a40;
+  border-radius: 0.75rem;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+  overflow: hidden;
+  background-color: #fff;
+  background-image: url('images/bg-quran.png');
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: lighten;
+  opacity: 0.96;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+/* Kartu khusus daftar surat */
+.surat-card .card-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Responsif padding & font */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h2, h3 {
+  color: #212529;
+}
+
+/* Judul arab & waqaf */
+.card-title[dir="rtl"] {
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+}
+
+/* Basmalah card center */
+.card.text-center .card-title {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #198754;
+}
+
+/* Memastikan isi tetap terbaca */
+.card-body {
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: inherit;
+  padding: 1rem;
+}
